@@ -2,7 +2,7 @@
 title: Begin Again
 date: 2020-05-07
 layout: post
-image: https://source.unsplash.com/IuLgi9PWETU/1280x720
+image: https://source.unsplash.com/IuLgi9PWETU/1200x800
 ---
 
 Welcome to my homepage on the internet. I'm not entirely sure if it makes sense for this site to exist, but it's here, and therefore it is (a rather terrible distortion of the latin phrase made famous by René Decartes).
