@@ -21,6 +21,7 @@ If you would like to get in touch, by far the most reliable method is email, alt
 ## Social Networks
 
 * [Twitter](https://twitter.com/jonbeckett)
+* [Mastodon](https://mstdn.social/jonbeckett)
 * [Facebook](https://facebook.com/jonbeckett)
 * [Instagram](https://instagram.com/jonbeckett)
 * [LinkedIn](https://linkedin.com/in/jonathanbeckett)
