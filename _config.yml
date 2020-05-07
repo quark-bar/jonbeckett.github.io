@@ -30,9 +30,9 @@ minima:
     # microdotblog: jekyll
 
     # Mastodon instances
-    #mastodon:
-    # - username: jonbeckett
-    #   instance: writing.exchange
+    mastodon:
+     - username: jonbeckett
+       instance: mstdn.social
     # - username: jekyll2
     #   instance: example.com
 
