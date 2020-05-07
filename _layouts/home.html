@@ -1,0 +1,50 @@
+---
+layout: default
+---
+
+<article class="post">
+
+{{ content }}
+
+{%- if site.posts.size > 0 -%}
+
+{%- for post in paginator.posts -%}
+  
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline"><a href="{{ post.url | relative_url }}" title="{{ post.title | escape }}">{{ post.title | escape }}</a></h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
+      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+      {{ post.date | date: date_format }}
+      </time>
+    </p>
+  </header>
+
+  {%- if post.image -%}<p><img src="{{post.image}}" alt="{{post.title | escape}}" /></p>{%- endif -%}
+
+  {{ post.excerpt }}
+
+  <p style="margin-bottom:40px;"><a href="{{ post.url | relative_url }}">Read More &raquo;</a></p>
+
+{% endfor %}
+
+<div class="pagination">
+<span class="page_number ">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+{% if paginator.previous_page %}
+&nbsp;<a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+{% endif %}
+{% if paginator.next_page %}
+&nbsp;<a href="{{ paginator.next_page_path }}" class="next">Next</a>
+{% endif %}
+</div>
+
+<br />
+
+<p class="feed-subscribe">
+<a href="{{ 'feed.xml' | relative_url }}">
+<svg class="svg-icon orange"><use xlink:href="{{ 'assets/minima-social-icons.svg#rss' | relative_url }}"></use></svg><span>Subscribe</span>
+</a>
+</p>
+{%- endif -%}
+
+</article>
